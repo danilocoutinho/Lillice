@@ -1,44 +1,90 @@
-@charset "UTF-8";
-
-* {
-    padding: 0px;
-    margin: 0px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-    background-image: linear-gradient(to bottom, rgb(110, 0, 0), black);
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #ff4c61, #ff1231);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
 }
 
-h1 {
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    font-size: 1.3em;
+/* TOPO */
+.topo{
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-h2 {
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 12px;
-    text-align: center;
+.topo img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
 }
 
-img {
-    max-width: 350px;
-    display: block;
-    padding: 15px;
-    margin: auto;
+.texto-topo h1{
+  font-size: 24px;
+  margin-bottom: 8px;
 }
 
-p {
-    color: white;
-    margin: 12px;
-    line-height: 22px;
-    text-align: center;
-    font-size: 1.1em;
+.texto-topo p{
+  font-size: 15px;
 }
 
-footer {
-    text-align: center;
-    font-weight: bold;
+/* CONTEÚDO */
+.container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container h2{
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.botoes{
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.botoes a{
+  text-decoration: none;
+  background: white;
+  color: #d63384;
+  padding: 18px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botoes a:hover{
+  transform: scale(1.03);
+  background: #ffd6e7;
+}
+
+/* RODAPÉ */
+footer{
+  text-align: center;
+  padding: 15px;
+  background: rgba(0,0,0,0.15);
+  font-size: 14px;
 }
