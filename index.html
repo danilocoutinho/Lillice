@@ -1,47 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lilice❤️</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nós Dois ❤️</title>
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- CABEÇALHO -->
-  <header class="topo">
-    <img src="img/img01.jpeg" alt="Foto do casal">
-    
-    <div class="texto-topo">
-      <h1>Cada hora, um pedacinho do meu amor por você ❤️</h1>
+  <!-- Música -->
+  <audio autoplay loop>
+    <source src="musica.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <img src="img/img04.jpegx" alt="Foto do casal" class="foto-casal">
+
+    <h1>Nós Dois ❤️</h1>
+
+    <p>
+      Desde o momento em que você entrou na minha vida,
+      tudo ficou mais bonito, mais leve e mais verdadeiro.
+    </p>
+
+    <a href="#historia" class="btn">
+      Nossa História
+    </a>
+
+  </section>
+
+  <!-- HISTÓRIA -->
+  <section id="historia">
+
+    <h2 class="title">Nossa História</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>📅 Primeiro Encontro</h3>
+        <p>07 de Feveveiro de 2026</p>
+      </div>
+
+      <div class="card">
+        <h3>❤️ Início do Namoro</h3>
+        <p>12 de janeiro de 2026</p>
+      </div>
+
+      <div class="card">
+        <h3>⏳ Tempo Juntos</h3>
+        <p id="contador"></p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MÚSICA -->
+  <section class="music">
+
+    <h2 class="title">Nossa Música 🎵</h2>
+
+    <div class="music-box">
+
+      <h2>Perfect — Ed Sheeran</h2>
+
       <p>
-        Entre 14h e 22h, escrevi pensamentos, sentimentos e momentos
-        especiais pensando em você.
+        Algumas músicas simplesmente parecem contar nossa história.
+        E essa sempre vai me lembrar de você.
       </p>
+
+      <iframe
+        src="https://open.spotify.com/embed/track/0tgVpDi06FyKpA1z0VMD4v?utm_source=generator">
+      </iframe>
+
     </div>
-  </header>
 
-  <!-- CONTEÚDO -->
-  <main class="container">
-    <h2>Escolha um horário</h2>
+  </section>
 
-    <div class="botoes">
-      <a href="14h.html">14:00</a>
-      <a href="15h.html">15:00</a>
-      <a href="16h.html">16:00</a>
-      <a href="17h.html">17:00</a>
-      <a href="18h.html">18:00</a>
-      <a href="19h.html">19:00</a>
-      <a href="20h.html">20:00</a>
-      <a href="21h.html">21:00</a>
-      <a href="22h.html">22:00</a>
+  <!-- TIMELINE -->
+  <section>
+
+    <h2 class="title">Linha do Tempo ✨</h2>
+
+    <div class="timeline">
+
+      <div class="container left">
+        <div class="content">
+          <h3>Primeira Conversa</h3>
+          <p>O começo de algo especial.</p>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <h3>Primeiro Encontro</h3>
+          <p>O dia em que tudo mudou.</p>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <h3>Primeiro Beijo</h3>
+          <p>Um momento inesquecível ❤️</p>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <h3>Pedido de Namoro</h3>
+          <p>O início oficial da nossa história.</p>
+        </div>
+      </div>
+
     </div>
-  </main>
 
-  <!-- RODAPÉ -->
+  </section>
+
+  <!-- GALERIA -->
+  <section>
+
+    <h2 class="title">Nossos Momentos 📸</h2>
+
+    <div class="gallery">
+
+      <img src="img/img02.jpeg" alt="">
+      <img src="img/img01.jpeg" alt="">
+      <img src="img/img10.jpeg" alt="">
+
+    </div>
+
+  </section>
+
+  <!-- CARTA -->
+  <section>
+
+    <h2 class="title">Uma Carta Para Você 💌</h2>
+
+    <div class="letter">
+
+      <p>
+        Você transformou minha vida em algo muito mais bonito.
+      </p>
+
+      <br>
+
+      <p>
+        Quero estar ao seu lado em todos os momentos,
+        sejam eles bons ou difíceis.
+      </p>
+
+      <br>
+
+      <p>
+        E se eu pudesse escolher novamente,
+        escolheria você todas as vezes ❤️
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    Desenvolvido por Dan a Princesinha dele ❤️
+    Feito com amor ❤️
   </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 
 </body>
 </html>
