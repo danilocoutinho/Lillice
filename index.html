@@ -1,181 +1,205 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dan ❤️ Lilice</title>
 
-  <title>Nós Dois ❤️</title>
+<link rel="stylesheet" href="style.css">
 
-  <!-- Fonte -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Música -->
-  <audio autoplay loop>
-    <source src="musica.mp3" type="audio/mp3">
-  </audio>
+<div id="hearts"></div>
 
-  <!-- HERO -->
-  <section class="hero">
+<section id="intro">
 
-    <img src="img/img04.jpeg" alt="Foto do casal" class="foto-casal">
+<div class="heart">❤️</div>
 
-    <h1>Nós Dois ❤️</h1>
+<h2>Uma surpresa especial te espera</h2>
 
-    <p>
-      Desde o momento em que você entrou na minha vida,
-      tudo ficou mais bonito, mais leve e mais verdadeiro.
-    </p>
+<button id="enterBtn">
+🤍 Clique aqui, amor 🤍
+</button>
 
-    <a href="#historia" class="btn">
-      Nossa História
-    </a>
+</section>
 
-  </section>
+<main id="content">
 
-  <!-- HISTÓRIA -->
-  <section id="historia">
+<section class="hero">
 
-    <h2 class="title">Nossa História</h2>
+<h1>Para minha Princesa</h1>
 
-    <div class="cards">
+<p class="since">
+Juntos desde 12 de Janeiro de 2026
+</p>
 
-      <div class="card">
-        <h3>📅 Primeiro Encontro</h3>
-        <p>07 de Feveveiro de 2026</p>
-      </div>
+<div class="counter">
 
-      <div class="card">
-        <h3>❤️ Início do Namoro</h3>
-        <p>12 de janeiro de 2026</p>
-      </div>
+<div class="box">
+<span id="days">0</span>
+<small>Dias</small>
+</div>
 
-      <div class="card">
-        <h3>⏳ Tempo Juntos</h3>
-        <p id="contador"></p>
-      </div>
+<div class="box">
+<span id="hours">0</span>
+<small>Horas</small>
+</div>
 
-    </div>
+<div class="box">
+<span id="minutes">0</span>
+<small>Minutos</small>
+</div>
 
-  </section>
+<div class="box">
+<span id="seconds">0</span>
+<small>Segundos</small>
+</div>
 
-  <!-- MÚSICA -->
-  <section class="music">
+</div>
 
-    <h2 class="title">Nossa Música 🎵</h2>
+<p class="love-days">
+✨ <span id="loveDays">0</span> dias de amor ✨
+</p>
 
-    <div class="music-box">
+</section>
 
-      <h2>Perfect — Ed Sheeran</h2>
+<section class="music-card">
 
-      <p>
-        Algumas músicas simplesmente parecem contar nossa história.
-        E essa sempre vai me lembrar de você.
-      </p>
+<h2>🎵 Nossa Música</h2>
 
-      <iframe
-        src="https://open.spotify.com/embed/track/0tgVpDi06FyKpA1z0VMD4v?utm_source=generator">
-      </iframe>
+<p>A trilha sonora do nosso amor</p>
 
-    </div>
+<button id="playMusic">
+▶️ Revelar Música
+</button>
 
-  </section>
+<audio id="music">
+<source src="audio/minha-presa.mp3">
+</audio>
 
-  <!-- TIMELINE -->
-  <section>
+</section>
 
-    <h2 class="title">Linha do Tempo ✨</h2>
+<section class="love-letter">
 
-    <div class="timeline">
+<h2>💌 Carta para Lilice</h2>
 
-      <div class="container left">
-        <div class="content">
-          <h3>Primeira Conversa</h3>
-          <p>O começo de algo especial.</p>
-        </div>
-      </div>
+<p>
+Lilice,
 
-      <div class="container right">
-        <div class="content">
-          <h3>Primeiro Encontro</h3>
-          <p>O dia em que tudo mudou.</p>
-        </div>
-      </div>
+Desde que você entrou na minha vida,
+tudo ficou mais bonito.
 
-      <div class="container left">
-        <div class="content">
-          <h3>Primeiro Beijo</h3>
-          <p>Um momento inesquecível ❤️</p>
-        </div>
-      </div>
+Você transformou dias comuns em memórias especiais,
+e momentos simples em lembranças inesquecíveis.
 
-      <div class="container right">
-        <div class="content">
-          <h3>Pedido de Namoro</h3>
-          <p>O início oficial da nossa história.</p>
-        </div>
-      </div>
+Obrigado por cada sorriso,
+cada abraço,
+cada conversa
+e cada instante ao seu lado.
 
-    </div>
+Você é uma das maiores bênçãos que Deus colocou em minha vida.
 
-  </section>
+Eu te amo hoje,
+amanhã
+e para sempre.
 
-  <!-- GALERIA -->
-  <section>
+❤️ Dan
+</p>
 
-    <h2 class="title">Nossos Momentos 📸</h2>
+</section>
 
-    <div class="gallery">
+<section class="gallery">
 
-      <img src="img/img02.jpeg" alt="">
-      <img src="img/img01.jpeg" alt="">
-      <img src="img/img10.jpeg" alt="">
+<h2>📸 Nossos Momentos</h2>
 
-    </div>
+<div class="slider">
 
-  </section>
+<button onclick="prevSlide()">❮</button>
 
-  <!-- CARTA -->
-  <section>
+<img id="slide"
+src="img/img01.jpeg">
 
-    <h2 class="title">Uma Carta Para Você 💌</h2>
+<button onclick="nextSlide()">❯</button>
 
-    <div class="letter">
+</div>
 
-      <p>
-        Você transformou minha vida em algo muito mais bonito.
-      </p>
+<div class="dots"></div>
 
-      <br>
+</section>
 
-      <p>
-        Quero estar ao seu lado em todos os momentos,
-        sejam eles bons ou difíceis.
-      </p>
+<section class="timeline">
 
-      <br>
+<h2>📖 Nossa História</h2>
 
-      <p>
-        E se eu pudesse escolher novamente,
-        escolheria você todas as vezes ❤️
-      </p>
+<div class="event">
+<h3>❤️ Início do namoro</h3>
+<p>O início da nossa história.</p>
+<img src="img/capa.jpg">
+</div>
 
-    </div>
+<div class="event">
+<h3>🥰 Primeiro encontro</h3>
+<img src="img/img10.jpeg">
+</div>
 
-  </section>
+<div class="event">
+<h3>🏠 Primeira vez na casa dela</h3>
+<img src="img/casa-dela.jpg">
+</div>
 
-  <!-- FOOTER -->
-  <footer>
-    Feito com amor ❤️
-  </footer>
+<div class="event">
+<h3>🏠 Primeira vez na casa dele</h3>
+<img src="img/casa-dele.jpg">
+</div>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+<div class="event">
+<h3>🌊 Praia juntos</h3>
+<img src="img/praia.jpg">
+</div>
+
+<div class="event">
+<h3>🍔 Lanche juntos</h3>
+<img src="img/lanche.jpg">
+</div>
+
+<div class="event">
+<h3>⛪ Igreja juntos</h3>
+<img src="img/igreja.jpg">
+</div>
+
+</section>
+
+<section class="final-message">
+
+<h2>❤️ Uma Última Mensagem ❤️</h2>
+
+<button id="surpriseBtn">
+Clique Aqui
+</button>
+
+<div id="surpriseText">
+
+Você é meu lugar favorito no mundo.
+
+Obrigado por existir,
+por me amar
+e por caminhar comigo.
+
+Te amo infinitamente.
+
+❤️❤️❤️
+
+</div>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
 
 </body>
 </html>

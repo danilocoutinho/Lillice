@@ -1,35 +1,104 @@
-// Espera a página carregar completamente
-document.addEventListener("DOMContentLoaded", () => {
+const intro = document.getElementById("intro");
+const content = document.getElementById("content");
 
-  // Data do início do namoro
-  const dataNamoro = new Date("2026-01-12T00:00:00");
+document
+.getElementById("enterBtn")
+.onclick = () => {
 
-  // Elemento do contador
-  const contador = document.getElementById("contador");
+intro.style.display = "none";
 
-  function atualizarContador() {
+content.style.display = "block";
 
-    const agora = new Date();
+window.scrollTo(0,0);
 
-    // Diferença em milissegundos
-    const diferenca = agora - dataNamoro;
+};
 
-    // Conversões
-    const segundos = Math.floor(diferenca / 1000);
-    const minutos = Math.floor(segundos / 60);
-    const horas = Math.floor(minutos / 60);
-    const dias = Math.floor(horas / 24);
+const startDate =
+new Date("2026-01-12T00:00:00");
 
-    // Atualiza na tela
-    contador.innerHTML = `
-      ${dias} dias ❤️
-    `;
-  }
+function updateCounter(){
 
-  // Atualiza imediatamente
-  atualizarContador();
+const now = new Date();
 
-  // Atualiza automaticamente
-  setInterval(atualizarContador, 1000);
+const diff = now - startDate;
 
-});
+const days =
+Math.floor(diff/(1000*60*60*24));
+
+const hours =
+Math.floor(diff/(1000*60*60)) % 24;
+
+const minutes =
+Math.floor(diff/(1000*60)) % 60;
+
+const seconds =
+Math.floor(diff/1000) % 60;
+
+document.getElementById("days").textContent = days;
+document.getElementById("hours").textContent = hours;
+document.getElementById("minutes").textContent = minutes;
+document.getElementById("seconds").textContent = seconds;
+
+document.getElementById("loveDays")
+.textContent = days;
+
+}
+
+setInterval(updateCounter,1000);
+updateCounter();
+
+const music =
+document.getElementById("music");
+
+document
+.getElementById("playMusic")
+.onclick = () => {
+
+music.play();
+
+};
+
+const images = [
+
+"img/galeria/foto1.jpg",
+"img/galeria/foto2.jpg",
+"img/galeria/foto3.jpg",
+"img/galeria/foto4.jpg",
+"img/galeria/foto5.jpg"
+
+];
+
+let current = 0;
+
+function nextSlide(){
+
+current++;
+
+if(current >= images.length)
+current = 0;
+
+slide.src = images[current];
+
+}
+
+function prevSlide(){
+
+current--;
+
+if(current < 0)
+current = images.length-1;
+
+slide.src = images[current];
+
+}
+
+document
+.getElementById("surpriseBtn")
+.onclick = () => {
+
+const text =
+document.getElementById("surpriseText");
+
+text.style.display = "block";
+
+};
