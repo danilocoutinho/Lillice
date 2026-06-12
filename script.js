@@ -60,7 +60,7 @@ music.play();
 
 const images = [
 
-"img/galeria/foto1.jpg",
+"img/img10.jpeg",
 "img/galeria/foto2.jpg",
 "img/galeria/foto3.jpg",
 "img/galeria/foto4.jpg",

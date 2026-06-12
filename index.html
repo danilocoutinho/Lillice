@@ -31,10 +31,12 @@
 
 <section class="hero">
 
+    <img src="img/3-removebg-preview (2).png" alt="" id="cp">
+
 <h1>Para minha Princesa</h1>
 
 <p class="since">
-Juntos desde 12 de Janeiro de 2026
+Juntos desde 12 de Janeiro de 2026❤️
 </p>
 
 <div class="counter">
@@ -67,19 +69,46 @@ Juntos desde 12 de Janeiro de 2026
 
 </section>
 
-<section class="music-card">
+<section class="music-section">
 
-<h2>🎵 Nossa Música</h2>
+    <h2>🎵 Nossa Música</h2>
+    <p>A trilha sonora do nosso amor</p>
 
-<p>A trilha sonora do nosso amor</p>
+    <button id="revealBtn" onclick="showPlayer()">
+        Revelar Música ❤️
+    </button>
 
-<button id="playMusic">
-▶️ Revelar Música
-</button>
+    <div class="spotify-player" id="spotifyPlayer">
 
-<audio id="music">
-<source src="audio/minha-presa.mp3">
-</audio>
+        <img src="img/2-removebg-preview.png" class="album-cover">
+
+        <div class="song-info">
+            <h3>Minha Presa</h3>
+            <p>Zezé di Camargo</p>
+        </div>
+
+        <audio id="audio">
+            <source src="Minha Presa.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="progress-container">
+            <span id="currentTime">0:00</span>
+
+            <input
+                type="range"
+                id="progressBar"
+                value="0"
+                min="0"
+                max="100">
+
+            <span id="duration">0:00</span>
+        </div>
+
+        <button id="playBtn" onclick="togglePlay()">
+            ▶
+        </button>
+
+    </div>
 
 </section>
 
@@ -112,25 +141,6 @@ e para sempre.
 
 </section>
 
-<section class="gallery">
-
-<h2>📸 Nossos Momentos</h2>
-
-<div class="slider">
-
-<button onclick="prevSlide()">❮</button>
-
-<img id="slide"
-src="img/img01.jpeg">
-
-<button onclick="nextSlide()">❯</button>
-
-</div>
-
-<div class="dots"></div>
-
-</section>
-
 <section class="timeline">
 
 <h2>📖 Nossa História</h2>
@@ -138,37 +148,57 @@ src="img/img01.jpeg">
 <div class="event">
 <h3>❤️ Início do namoro</h3>
 <p>O início da nossa história.</p>
-<img src="img/capa.jpg">
+<p>💌12/01/2026 <br> <br>
+
+Dan e Lilice, não se conheciam, e nem sabiam da existência um do outro, mas em 12/01/2026, Deus fez Dan e Lilice se encontrarem, foi de forma virtual, mas ali naquele momento em que eles conversaram pela primeira vez já existia amor de ambos os lados, Deus uniu eles pois eles precisam um do outro, pois eles estão sempre se apoiando, se motivando, e dessa forma eles mantém o relacionamento deles, com a certeza que todo esforço e dedicação deles serão recompensados e eles irão realizar todos os sonhos deles, e assim a linda história de Dan e Lilice começou.</p>
 </div>
 
 <div class="event">
 <h3>🥰 Primeiro encontro</h3>
 <img src="img/img10.jpeg">
+<p>🕯️07/02/2026 <br><br>
+
+O primeiro encontro de Dan e Lilice foi cheio de vergonha e timidez, eles saíram para ir em uma cafeteira, lá o Dan abriu errado a porta duas vezes rsrs, lá eles lancharam, e depois foram dar uma volta pelo cais da cidade, e em um certo momento, Dan pediu a Lilice em namoro oficialmente, com aliança, e Lilice aceitou.</p>
 </div>
 
 <div class="event">
 <h3>🏠 Primeira vez na casa dela</h3>
-<img src="img/casa-dela.jpg">
+<img src="img/img02.jpeg">
+<p>🏠 20/03/2026 <br><br>
+
+Dan foi a casa da Lilice pela primeira vez, lá Dan conheceu sua sogra e a família de Lilice, foi um momento maravilhoso e marcante na relação deles, eles passaram o final de semana juntos, saíram para o balneário e etc.</p>
 </div>
 
 <div class="event">
 <h3>🏠 Primeira vez na casa dele</h3>
-<img src="img/casa-dele.jpg">
+<img src="img/img06.jpeg">
+<p>🏠 02/04/2026 <br><br>
+
+Lilice foi a casa de Dan pela primeira vez, eles passaram a semana santa e a Páscoa juntos, Lilice conheceu a família de Dan, eles saíram pra passear e lanchar e muito mais. Foi incrível, um conheceu a família do outro.</p>
 </div>
 
 <div class="event">
 <h3>🌊 Praia juntos</h3>
-<img src="img/praia.jpg">
+<img src="img/img13.jpeg">
+<p>🏖️ 24/05/2026 <br><br>
+
+Dan e Lilice foram a praia de cametá Tapera, lá eles andaram pela praia, bateram diversas fotos, e tomaram banho juntos, foi muito maravilhoso e incrível para eles.</p>
 </div>
 
 <div class="event">
 <h3>🍔 Lanche juntos</h3>
-<img src="img/lanche.jpg">
+<img src="img/img12.jpeg">
+<p>🍔 24/05/2026 <br><br>
+
+Em uma bela noite, Dan e Lilice saíram pra lanchar, comeram lanche juntos, deram uma volta pela cidade, aproveitaram o momento juntos, e estavam muito felizes e alegres, esse momento foi incrível e maravilhoso para eles.</p>
 </div>
 
 <div class="event">
 <h3>⛪ Igreja juntos</h3>
-<img src="img/igreja.jpg">
+<img src="img/img03.jpeg">
+<p>⛪️ 03/05/2026 <br><br>
+
+Em uma manhã de domingo ensolarado, Dan e Lilice foram a igreja, rezar e orar a Deus, Agradecer a Deus pelas suas vidas e pelo relacionamento deles, foram pedi forças a Deus e para Deus abençoar eles sempre.</p>
 </div>
 
 </section>
@@ -177,29 +207,94 @@ src="img/img01.jpeg">
 
 <h2>❤️ Uma Última Mensagem ❤️</h2>
 
-<button id="surpriseBtn">
-Clique Aqui
-</button>
-
-<div id="surpriseText">
-
-Você é meu lugar favorito no mundo.
-
-Obrigado por existir,
-por me amar
-e por caminhar comigo.
-
-Te amo infinitamente.
-
-❤️❤️❤️
-
-</div>
+<p>Meu amor, quero que vc saiba que eu amoooooo muito vc meu amor, e sempre amarei vc de todo o meu coração e de toda minha alma, peço a Deus para que nosso amor viva por toda a eternidade, e que ele sempre nos abençoe e nos ajude a superar as barreiras e obstáculos meu bem. Eu sempre estarei aqui ao seu lado e com vc, disposto a lhe ajudar, aparar e está ao seu lado meu bem ❤️‍🩹</p>
 
 </section>
 
 </main>
 
 <script src="script.js"></script>
+
+<script>
+
+const audio = document.getElementById("audio");
+const playBtn = document.getElementById("playBtn");
+const progressBar = document.getElementById("progressBar");
+const currentTime = document.getElementById("currentTime");
+const duration = document.getElementById("duration");
+const albumCover = document.querySelector(".album-cover");
+
+function showPlayer(){
+
+    document.getElementById("revealBtn").style.display = "none";
+
+    document.getElementById("spotifyPlayer").style.display = "block";
+}
+
+function togglePlay(){
+
+    if(audio.paused){
+
+        audio.play();
+
+        playBtn.innerHTML = "❚❚";
+
+        albumCover.classList.add("playing");
+
+    }else{
+
+        audio.pause();
+
+        playBtn.innerHTML = "▶";
+
+        albumCover.classList.remove("playing");
+    }
+}
+
+audio.addEventListener("loadedmetadata", ()=>{
+
+    duration.textContent =
+        formatTime(audio.duration);
+
+});
+
+audio.addEventListener("timeupdate", ()=>{
+
+    const progress =
+        (audio.currentTime/audio.duration)*100;
+
+    progressBar.value = progress;
+
+    currentTime.textContent =
+        formatTime(audio.currentTime);
+
+});
+
+progressBar.addEventListener("input", ()=>{
+
+    audio.currentTime =
+    (progressBar.value/100)
+    * audio.duration;
+
+});
+
+function formatTime(seconds){
+
+    let min =
+    Math.floor(seconds/60);
+
+    let sec =
+    Math.floor(seconds%60);
+
+    if(sec < 10){
+        sec = "0" + sec;
+    }
+
+    return min + ":" + sec;
+    
+}
+
+</script>
 
 </body>
 </html>
